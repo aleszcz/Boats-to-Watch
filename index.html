@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Boat Shortlist — YachtWorld</title>
+<style>
+  :root{
+    --ink:#0e2233;
+    --sea:#1c5b7a;
+    --sea-deep:#103c52;
+    --foam:#eef4f6;
+    --paper:#f7f5ef;
+    --sail:#1c5b7a;
+    --power:#9a5b2e;
+    --line:#d8d3c6;
+    --muted:#5d6b75;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.5;
+  }
+  header{
+    background:linear-gradient(160deg,var(--sea-deep),var(--sea));
+    color:#fff;
+    padding:48px 24px 40px;
+    border-bottom:4px solid var(--ink);
+  }
+  .wrap{max-width:1120px;margin:0 auto;}
+  header .eyebrow{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    opacity:.8;
+    margin:0 0 10px;
+  }
+  header h1{
+    font-size:clamp(2rem,5vw,3.2rem);
+    margin:0 0 8px;
+    font-weight:600;
+    letter-spacing:-.01em;
+  }
+  header p{margin:0;opacity:.85;max-width:60ch;font-size:1.02rem;}
+  .count{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.8rem;
+    letter-spacing:.05em;
+    margin-top:18px;
+    opacity:.8;
+  }
+
+  main{padding:40px 24px 64px;}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:26px;
+  }
+
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(16,40,60,.16);}
+  .thumb{
+    aspect-ratio:4/3;
+    background:var(--foam) center/cover no-repeat;
+    position:relative;
+  }
+  .tag{
+    position:absolute;top:12px;left:12px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;
+    color:#fff;padding:4px 9px;border-radius:2px;
+  }
+  .tag.sail{background:var(--sail);}
+  .tag.power{background:var(--power);}
+  .body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;}
+  .name{font-size:1.18rem;margin:0 0 2px;font-weight:600;}
+  .sub{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.78rem;color:var(--muted);letter-spacing:.03em;
+    margin:0 0 14px;
+  }
+  .price{
+    font-size:1.35rem;font-weight:600;color:var(--sea-deep);
+    margin:0 0 14px;
+  }
+  .price .note{
+    display:block;font-size:.68rem;font-weight:400;color:var(--muted);
+    font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:.02em;margin-top:2px;
+  }
+  .specs{
+    list-style:none;padding:0;margin:0 0 18px;
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:.82rem;
+    border-top:1px solid var(--line);
+  }
+  .specs li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:7px 0;border-bottom:1px solid var(--line);
+  }
+  .specs .k{color:var(--muted);}
+  .specs .v{font-weight:600;text-align:right;}
+  .view{
+    margin-top:auto;
+    display:inline-block;text-align:center;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
+    text-decoration:none;color:#fff;background:var(--ink);
+    padding:11px 14px;border-radius:3px;
+    transition:background .15s ease;
+  }
+  .view:hover{background:var(--sea);}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:24px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.76rem;color:var(--muted);text-align:center;
+  }
+  @media (max-width:480px){
+    header{padding:36px 20px 30px;}
+    main{padding:28px 16px 48px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Brokerage Shortlist · California</p>
+    <h1>Boats to Watch</h1>
+    <p>Eight listings from YachtWorld — four sail, four power — across San Diego, Long Beach, Berkeley, and the Bay. Prices and figures as last seen; confirm with each broker.</p>
+    <p class="count">8 vessels · $59,700 – $179,500</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- 1. Frers -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/95/82/1976-frers-custom-sail-9849582-20250804114605143-1.jpg?w=600')">
+          <span class="tag sail">Sail · Racer/Cruiser</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1976 Frers Custom</h2>
+          <p class="sub">San Diego, California</p>
+          <p class="price">$76,499</p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">46 ft</span></li>
+            <li><span class="k">Engine</span><span class="v">Yanmar 4JH2HTE · 75 hp</span></li>
+            <li><span class="k">Engine hours</span><span class="v">1,269</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1976-frers-custom-9849582/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 2. Lapworth -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boats.com/resize/1/66/60/2004-lapworth-custom-sloop-sail-9506660-20240814160202044-1_XLARGE.jpg?t=1778794120000')">
+          <span class="tag sail">Sail · Racer</span>
+        </div>
+        <div class="body">
+          <h2 class="name">2004 Lapworth Custom Sloop</h2>
+          <p class="sub">“Aranji II” · Long Beach, California</p>
+          <p class="price">$77,500</p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">48 ft (14.63 m)</span></li>
+            <li><span class="k">Engine</span><span class="v">Steyr M14 TCAM · 89 hp · 51 hrs</span></li>
+            <li><span class="k">Hull</span><span class="v">Aluminum · Bill Lapworth</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/2004-lapworth-custom-sloop-10184249/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 3. Jeanneau -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/66/18/2002-jeanneau-sun-odyssey-43-ds-sail-10126618-20260324204616332-4.jpg?w=600')">
+          <span class="tag sail">Sail · Cruiser</span>
+        </div>
+        <div class="body">
+          <h2 class="name">2002 Jeanneau Sun Odyssey 43 DS</h2>
+          <p class="sub">San Diego, California</p>
+          <p class="price">$139,900</p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">42 ft</span></li>
+            <li><span class="k">Engine</span><span class="v">Yanmar diesel</span></li>
+            <li><span class="k">Engine hours</span><span class="v">987</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/2002-jeanneau-sun-odyssey-43-ds-10126618/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 4. Classic Ketch -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/77/18/1970-classic-ketch-sail-10157718-20260502164407311-1.jpg?w=600')">
+          <span class="tag sail">Sail · Cruiser</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1970 Classic Ketch</h2>
+          <p class="sub">Berkeley, California</p>
+          <p class="price">$59,700</p>
+          <ul class="specs">
+            <li><span class="k">Type</span><span class="v">Classic ketch</span></li>
+            <li><span class="k">Builder</span><span class="v">Chen (wood)</span></li>
+            <li><span class="k">Rig</span><span class="v">Ketch</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1970-classic-ketch-10157718/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 5. Hunter -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/43/67/1986-hunter-legend-45-sail-10054367-20260112232055217-1.jpg?w=600')">
+          <span class="tag sail">Sail · Cruiser</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1986 Hunter Legend 45</h2>
+          <p class="sub">San Diego, California</p>
+          <p class="price">~$79,000<span class="note">Price from aggregator — confirm with broker</span></p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">~46.8 ft</span></li>
+            <li><span class="k">Class</span><span class="v">Cruiser</span></li>
+            <li><span class="k">Electronics</span><span class="v">Raymarine</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1986-hunter-legend-45-10054367/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 6. Ocean Alexander -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/23/37/1993-ocean-alexander-440-power-9872337-20250714223130453-1.jpg?w=600')">
+          <span class="tag power">Power · Aft Cabin</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1993 Ocean Alexander 440</h2>
+          <p class="sub">San Rafael, California</p>
+          <p class="price">$153,450</p>
+          <ul class="specs">
+            <li><span class="k">Class</span><span class="v">Aft Cabin Motor Yacht</span></li>
+            <li><span class="k">Model</span><span class="v">440</span></li>
+            <li><span class="k">Type</span><span class="v">Power</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1993-ocean-alexander-440-9872337/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 7. Offshore Yachts -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/17/50/1986-offshore-yachts-48-yachtfisher-power-10091750-20260601142310779-1.jpg?w=600')">
+          <span class="tag power">Power · Motor Yacht</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1986 Offshore Yachts 48 Yachtfisher</h2>
+          <p class="sub">San Diego, California</p>
+          <p class="price">$179,500</p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">48 ft</span></li>
+            <li><span class="k">Class</span><span class="v">Yachtfisher / Motor Yacht</span></li>
+            <li><span class="k">Broker</span><span class="v">Brokaw Yacht Sales</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1986-offshore-yachts-48-yachtfisher-10202949/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+      <!-- 8. Grand Banks -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://images.boatsgroup.com/resize/1/14/72/1979-grand-banks-36-classic-power-10071472-20260205122622828-20.jpg?w=600')">
+          <span class="tag power">Power · Trawler</span>
+        </div>
+        <div class="body">
+          <h2 class="name">1979 Grand Banks 36 Classic</h2>
+          <p class="sub">San Diego, California</p>
+          <p class="price">$124,795</p>
+          <ul class="specs">
+            <li><span class="k">Length</span><span class="v">36 ft</span></li>
+            <li><span class="k">Class</span><span class="v">Trawler</span></li>
+            <li><span class="k">Model</span><span class="v">36 Classic</span></li>
+          </ul>
+          <a class="view" href="https://www.yachtworld.com/yacht/1979-grand-banks-36-classic-10071472/" target="_blank" rel="noopener">View listing</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  Listings sourced from YachtWorld · Figures as last seen and subject to change · Verify all details with the listing broker before purchase.
+</footer>
+</body>
+</html>
